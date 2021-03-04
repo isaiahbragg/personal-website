@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="/style.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="app.js"></script>
+  <script src="todos.js"></script>
+</head>
+<body class="fix-search">
+  <main class="container">
+    <section class="content">
+      <h1>Isaiah Bragg</h1>
+      <p id="desc">
+      </p>
+      <a href="mailto:isaiahbragg2020@gmail.com" title="Email Isaiah">Contact</a>
+    </section>
+  </main>
+
+  <div>
+    <footer id="navBar" class="fix-nav">
+      <a class="twitter" href="https://twitter.com/IsaiahBragg14">
+        <i class="fab fa-twitter">
+          </i>
+      </a>
+      <a class="github" href="https://github.com/isaiahbragg">
+        <i class="fab fa-github">
+          </i>
+      </a>
+      <a class="instagram" href="https://www.instagram.com/isaiahbragg/">
+        <i class="fab fa-instagram">
+          </i>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/in/isaiah-bragg-340b93148/">
+        <i class="fab fa-linkedin">
+          </i>
+      </a>
+    </footer>
+  </div>
+  <div>
+    <div class="main" id="section1">
+      <h1>To Do List</h2>
+        <ul id="todos"></ul>
+      <form id="new-todo-form">
+        <label for="new-todo">Add to do</label><br>
+        <input type="text" id="new-todo" name="new-todo">
+        <input type="submit" value="Add">
+      </form>
+      <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+    </div>
+    
+    <div class="main" id="section2">
+      <h2>Section 2</h2>
+      <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+    </div>
+  </div>
+</body>
+</html>

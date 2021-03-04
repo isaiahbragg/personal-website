@@ -3,12 +3,14 @@ var showText = function (target, message, index, interval) {
   if (index < message.length) {
     $(target).append(message[index++]);
     setTimeout(function () { showText(target, message, index, interval); }, interval);
-  }
+    //Add Blinking cursor after text is revealed
+  } else document.querySelector("#myCursor").setAttribute("class", "blink_me")
+  
 }
-$(function () {
-  showText("#desc", "Software_For_Humans", 0, 100);
-});
 
+$(function () {
+  done = showText("#desc", "Software_For_Humans...", 0, 100);
+});
 
 //smooth scrolling to my page links
 $(document).ready(function(){
